@@ -1,0 +1,28 @@
+{
+  "name": "super-maps-server",
+  "version": "0.0.1",
+  "main": "dist/app.js",
+  "author": "fax1ty",
+  "private": true,
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^10.0.0",
+    "fastify": "^3.19.1",
+    "fastify-cors": "^6.0.2",
+    "fastify-multipart": "^4.0.7",
+    "fastify-static": "^4.2.3",
+    "mitt": "^3.0.0",
+    "mongoose": "^5.13.5",
+    "nanoid": "^3.1.23",
+    "ws": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^16.4.13",
+    "@types/ws": "^7.4.7",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "start": "tsc && node ."
+  }
+}
