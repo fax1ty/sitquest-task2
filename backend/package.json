@@ -5,6 +5,7 @@
   "author": "fax1ty",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.1",
     "chalk": "^4.1.2",
     "dotenv": "^10.0.0",
     "fastify": "^3.19.1",

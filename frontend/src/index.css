@@ -1,46 +1,48 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Old versions of Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
 .share-map {
-  background-color: white;
-  transition: all .5s ease;
+    background-color: white;
+    transition: all 0.5s ease;
 }
 
 .share-map:hover {
-  background-color: rgb(185, 211, 225);
+    background-color: rgb(185, 211, 225);
 }
 
 .control-button {
-  background-color: #DFE9F1;
-  transition: all .5s ease;
+    background-color: #dfe9f1;
+    transition: all 0.5s ease;
 }
 
 .control-button:hover {
-  background-color: #B9D3E1;
+    background-color: #b9d3e1;
 }
 
 .control-button-enabled {
-  background-color: #FF7652;
-  transition: all .5s ease;
+    background-color: #ff7652;
+    transition: all 0.5s ease;
 }
 
 .control-button-enabled:hover {
-  background-color: #28324E;
+    background-color: #28324e;
 }

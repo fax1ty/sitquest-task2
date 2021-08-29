@@ -8,6 +8,7 @@
 ```
 REACT_APP_RECAPTCHA_V2_KEY=Ключ от Google ReCaptcha V2
 REACT_APP_MAPBOX_TOKEN=Ключ от MapBox
+REACT_APP_MAPBOX_STYLE=Ссылка на стиль из MapBox, можно взять мой, mapbox://styles/fax1ty/cksx41bj47o1q18qu0yanx09j
 REACT_APP_BACKEND_ENDPOINT=URL по которому сервер будет публично доступен
 REACT_APP_BACKEND_WS=То же что и выше, но с протоколом WS
 ```
@@ -19,6 +20,9 @@ MONGODB=URL подключения к инстансу MONGO DB
 IP=IP на котором вы хотите чтобы работал сервер (на нём же будет работать сайт)
 PORT=Тоже самое, что и сверху, только порт
 SALT=Соль для генерации хэшей (любая строка)
+HERE_TOKEN=Токен от HERE Location Services REST APIs.
 ```
 
-Потом запускаем Mongo DB (если ещё не...) и пользуемся скриптом `start`. Поздравляю, сайт доступен на `IP`:`PORT`
+При первом запуске необходимо собрать фронтэнд. Скрипт `build` в папке frontend.
+
+Потом запускаем Mongo DB (если ещё не...) и пользуемся скриптом `start` в папке backend. Поздравляю, сайт доступен на `IP`:`PORT`
