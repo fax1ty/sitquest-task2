@@ -1,0 +1,26 @@
+image: node:14
+
+stages:
+    - build-frontend
+    - build-backend
+
+cache:
+    paths:
+        - */node_modules/
+
+build_frontend:
+    stage: build-frontend
+    script:
+        - cd frontend/
+        - yarn
+        - yarn build
+    artifacts:
+        paths:
+            - /frontend/build/
+        expires_in: 1 day
+
+build_backend:
+    stage: build-backend
+    script:
+        - cd ../backend/
+        - yarn

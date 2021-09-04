@@ -1,0 +1,26 @@
+version: "3"
+services:
+    app:
+        container_name: super-maps
+        restart: always
+        build: .
+        ports:
+            - "3000:3000"
+        external_links:
+            - mongo
+        environment:
+            - REACT_APP_RECAPTCHA_V2_KEY=${RECAPTCHA_V2_KEY}
+            - REACT_APP_MAPBOX_TOKEN=${MAPBOX_TOKEN}
+            - REACT_APP_MAPBOX_STYLE=${MAPBOX_STYLE}
+            - PORT=3000
+            - REACT_APP_BACKEND_ENDPOINT=http://localhost:3000/api/v1
+            - REACT_APP_BACKEND_WS=ws://localhost:3000
+            - MONGODB=mongodb://localhost/maps
+            - IP=localhost
+            - SALT=${BACKEND_SALT}
+            - HERE_TOKEN=${HERE_TOKEN}
+    mongo:
+        container_name: mongo
+        image: mongo
+        ports:
+            - "27017:27017"
